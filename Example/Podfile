@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'CyDemoKit_Example' do
+  pod 'CyDemoKit', :path => '../'
+
+  target 'CyDemoKit_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end
